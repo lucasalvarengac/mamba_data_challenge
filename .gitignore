@@ -1,5 +1,4 @@
 *.csv
 *.json
-analysis.py
 challenge_mamba/
 *.cpython*

@@ -32,5 +32,4 @@ Finalmente, com o output da API tratado devidamente, e com o auxilio das funcoes
     .
     └── sql                 # Arquivos contendo a query que responde a pergunta solicitada (41 -> topico 4.1)
 
-Temos 5 arquivos `.sql` que responde cada uma das perguntas solicitadas no desafio.
-
+Temos 5 arquivos `.sql` que responde cada uma das perguntas solicitadas no desafio. Para rodar, via python, deixei um script `analysis.py` como template para rodar as queries.
