@@ -27,11 +27,12 @@ def read_bigquery(query, client):
         Read bigquery data and return a pandas dataframe
     """
     query_job = client.query(query)
-    rows = query_job.result()
-    data=[]
-    for row in rows:
-        data.append(row)
-    return DataFrame(data)
+    dataframe = (
+        query_job
+        .result()
+        .to_dataframe()
+    )
+    return dataframe
 
 def auth_bq(project):
     """
